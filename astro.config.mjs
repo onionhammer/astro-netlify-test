@@ -8,7 +8,9 @@ export default defineConfig({
       config: {
         // Use Netlify’s “Git Gateway” authentication and target our default branch
         backend: {
-          name: 'git-gateway',
+          // name: 'git-gateway',
+          name: 'github',
+          repo: 'onionhammer/astro-netlify-test',
           branch: 'latest',
         },
         // Configure where our media assets are stored & served from
